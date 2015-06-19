@@ -1,0 +1,15 @@
+name: "Velocity (HTML)"
+scopeName: "source.velocity.html"
+fileTypes: [ "vm", "vm.html" ]
+patterns: [
+  {
+    begin: "<!--"
+    end: "-->"
+    name: "punctuation.definition.comment.velocity"
+    patterns: [
+      { include: "$self" }
+    ]
+  }
+  { include: "source.velocity" }
+  { include: "text.html.basic" }
+]

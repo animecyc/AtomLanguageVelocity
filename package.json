@@ -1,0 +1,16 @@
+{
+  "name": "atom-language-velocity",
+  "version": "0.1.0",
+  "description": "Adds support for the Velocity templating langauge to Atom.",
+  "keywords": [
+    "java",
+    "apache",
+    "velocity"
+  ],
+  "repository": "https://github.com/animecyc/AtomLanguageVelocity",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.210.0"
+  },
+  "dependencies": {}
+}

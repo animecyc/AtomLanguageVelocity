@@ -1,0 +1,59 @@
+".source.velocity":
+  "$":
+    prefix: "$"
+    body: '''
+      ${${1:foo}}${0}
+    '''
+  "set":
+    prefix: "set"
+    body: '''
+      #set( $${1:foo} = ${2:'${3}'} )${0}
+    '''
+  "foreach":
+    prefix: "foreach"
+    body: '''
+      #foreach( $${1:foo} in $!{${2:bar}} )
+        ${0}
+      #end
+    '''
+  "if":
+    prefix: "if"
+    body: '''
+      #if( ${${1:foo}} )
+        ${0}
+      #end
+    '''
+  "elif":
+    prefix: "elif"
+    body: '''
+      #elseif( ${${1:foo}} )${0}
+    '''
+  "macro":
+    prefix: "macro"
+    body: '''
+      #macro( ${1:foo} $${2:bar} )
+        ${0}
+      #end
+    '''
+  "define":
+    prefix: "define"
+    body: '''
+      #define( $${1:foo} )
+        ${0}
+      #end
+    '''
+  "evaluate":
+    prefix: "evaluate"
+    body: '''
+      #evaluate( ${1:"$!\\\{${2:foo}\\\}"} )${0}
+    '''
+  "parse":
+    prefix: "parse"
+    body: '''
+      #parse( '${1}' )${0}
+    '''
+  "include":
+    prefix: "include"
+    body: '''
+      #include( '${1:foo}' )${0}
+    '''
