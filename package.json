@@ -1,6 +1,6 @@
 {
   "name": "atom-language-velocity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds support for the Velocity templating langauge to Atom.",
   "keywords": [
     "java",
