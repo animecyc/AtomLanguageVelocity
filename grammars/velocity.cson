@@ -50,10 +50,12 @@ repository:
         name: "punctuation.definition.comment.velocity"
         patterns: [
           {
+            match: "\\*\\s+?(?:(@)([a-zA-Z]*))\\s"
             captures:
               1:
-                name: "keyword.other.phpdoc.php"
-            match: "\\*\\s+?(@[a-zA-Z]*)\\s"
+                name: "keyword.other.documentation.param.javadoc"
+              2:
+                name: "punctuation.definition.keyword.javadoc"
           }
         ]
       }
