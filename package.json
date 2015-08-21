@@ -9,6 +9,7 @@
   ],
   "repository": "https://github.com/animecyc/AtomLanguageVelocity",
   "license": "MIT",
+  "main": "lib/velocity",
   "engines": {
     "atom": ">=0.210.0"
   },
