@@ -1,3 +1,6 @@
 ".source.velocity":
   editor:
     commentStart: "## "
+    foldEndPattern: "#end"
+    increaseIndentPattern: '^[\\s\\t]*#((else)?if|else|foreach|macro)'
+    decreaseIndentPattern: '^[\\s\\t]*#(end|else(if)?)'
