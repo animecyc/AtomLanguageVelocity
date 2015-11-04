@@ -1,6 +1,10 @@
 name: "Velocity (HTML)"
 scopeName: "source.velocity.html"
-fileTypes: [ "vm", "vm.html" ]
+fileTypes: [
+  "vsl"
+  "vm"
+  "vm.html"
+]
 patterns: [
   {
     begin: "<!--"
