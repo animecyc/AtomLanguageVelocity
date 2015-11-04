@@ -1,6 +1,9 @@
 name: "Velocity"
 scopeName: "source.velocity"
-fileTypes: [ "vm" ]
+fileTypes: [
+  "vsl"
+  "vm"
+]
 patterns: [
   { include: "#operators" }
   { include: "#comments" }
